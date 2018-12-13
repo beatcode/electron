@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zeiterfassung</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/photon.min.css">
+  <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../node_modules/js-datepicker/dist/datepicker.min.css">
+
+  <!-- Javascript -->
+  <script src="../../node_modules/js-datepicker/dist/datepicker.min.js"></script>
+</head>
+<body>
+
+  <div class="window">
+    <!-- .toolbar-header sits at the top of your app -->
+    <header class="toolbar toolbar-header">
+    </header>
+
+    <!-- Your app's content goes inside .window-content -->
+    <div class="window-content">
+
+      <!-- Seiten Navigation -->
+      <div class="pane-group">
+        <div class="pane pane-sm sidebar">
+          <nav class="nav-group">
+            <h5 class="nav-group-title">Favorites</h5>
+            <span class="nav-group-item active" id="item1">
+              <span class="icon icon-clock"></span>
+              Zeiterfassung
+            </span>
+          </nav>
+          <nav class="nav-group">
+            <h5 class="nav-group-title">Administration</h5>
+            <span class="nav-group-item ">
+              <span class="icon icon-doc-text" id="item2"></span>
+              Kategorien
+            </span>
+          </nav>
+          <nav class="nav-group">
+            <h5 class="nav-group-title">Auswertung</h5>
+            <span class="nav-group-item ">
+              <span class="icon icon-chart-line" id="item3"></span>
+              Auswertung
+            </span>
+          </nav>
+        </div>
+
+        <!-- Content Rechts -->
+        <div class="pane">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="padded-more ">
+                <div id="timer" class="display-4 ">00:00</div>
+              </div>
+            </div>
+
+            <form>
+              <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                </div>
+              </div>
+            </form>
+
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <select id="Selectbox" class="form-control"> </select>
+              </div>
+              <div class="form-group col-md-6">
+                <select id="Selectbox2" class="form-control"> </select>
+              </div>
+            </div>
+
+            <button type="button" id="start" name="start"  class="btn btn-large btn-success"   value="Start"   />Start</button>
+            <button type="button" id="save" class="btn btn-secondary  btn" value="Save"   />Save</button>
+            <button type="button" id="reset" class="btn btn-secondary  btn" value="Reset"  />Reset</button>
+            <button type="button" id="table" class="btn btn-secondary  btn" value="Table"  />Table</button>
+
+            <br><br>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input class="form-control start" size="16" type="text" value="12-02-2012">
+              </div>
+              <div class="form-group col-md-6">
+                <input class="form-control end" size="16" type="text" value="12-02-2012">
+              </div>
+            </div>
+            <br><br>
+
+          <button type="button" id="btn_Week" class="btn btn-secondary  btn" value="week" /></button>
+            <!-- <div id="table1">  </div> -->
+          </div>
+        </div>
+      </div>
+    </div> <!--  Div Content -->
+  </div>
+  <script>
+  require('../js/index.js');
+  </script>
+</body>
+</html>

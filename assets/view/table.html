@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tabelle</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./assets/css/photon.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- Javascript -->
+  <script src="node_modules/tableexport/dist/js/tableexport.js"></script>
+
+</head>
+<body>
+
+  <div class="window">
+    <!-- .toolbar-header sits at the top of your app -->
+    <header class="toolbar toolbar-header">
+    </header>
+
+    <!-- Your app's content goes inside .window-content -->
+    <div class="window-content">
+
+      <!-- Seiten Navigation -->
+      <div class="pane-group">
+
+        <!-- Content Rechts -->
+        <div class="pane">
+          <div class="container-fluid">
+          <button type="button" id="btn_TableExport" class="btn btn-secondary  btn"  value="Table"  />Table</button>
+            <div id="tbl_main"></div>
+        </div>
+      </div>
+    </div> <!--  Div Content -->
+  </div>
+  <script>
+  require('../js/table.js');
+  </script>
+</body>
+</html>

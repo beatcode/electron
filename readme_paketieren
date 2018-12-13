@@ -1,0 +1,5 @@
+
+Befehle für das Paketieren
+===========================
+1) npm run package-win
+2) npm run create-installer-win
